@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Bootstrap homework</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+	<div class="Header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand" href="#">Logo</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mr-auto">
+	  			<li class="nav-item">
+	    			<a class="nav-link" href="#">Link 1</a>
+	  			</li>
+	  			<li class="nav-item">
+	    			<a class="nav-link" href="#">Link 2</a>
+	  			</li>
+	  			<li class="nav-item">
+	    			<a class="nav-link" href="#">Link 3</a>
+	  			</li>
+	  			<li class="nav-item">
+	    			<a class="nav-link" href="#">Link 4</a>
+	  			</li>
+	  			<li class="nav-item">
+	    			<a class="nav-link" href="#">Link 5</a>
+	  			</li>
+			    <li class="nav-item dropdown">
+			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			        Dropdown link
+			      </a>
+			      <ul class="dropdown-menu Header-navItem">
+			        <li><a class="dropdown-item" href="#">Link 1</a></li>
+			        <li><a class="dropdown-item" href="#">Link 2</a></li>
+			        <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Modal-Link</a></li>
+			      </ul>
+			    </li>
+			  </ul>
+			  </div>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+		<main class="Main">
+			<div class="row Main-items">
+				<div class="col-lg-3 col-xs-12 Card">
+					<div class="Card-imageContainer">
+						<img class="Card-image" src="images/logo.png" alt="img">
+					</div>
+					<div class="Card-body">
+						<p class="Card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-xs-12 Card">
+					<div class="Card-imageContainer Card-imageContainer--order">
+						<img class="Card-image" src="images/logo.png" alt="img">
+					</div>
+					<div class="Card-body Card-body--order">
+						<p class="Card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-xs-12 Card">
+					<div class="Card-imageContainer">
+						<img class="Card-image" src="images/logo.png" alt="img">
+					</div>
+					<div class="Card-body">
+						<p class="Card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row Button-container">
+				<button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Кнопка модального окна</button>
+				<div id="myModal" class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Сие и есть модальное окно</h4>
+								<button class="close" type="button" data-dismiss="modal">×</button>
+							</div>
+							<div class="modal-body">В графическом интерфейсе пользователя модальным называется окно, которое блокирует работу пользователя с родительским приложением до тех пор, пока пользователь это окно не закроет.</div>
+							<div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+    	  <div class="modal-dialog" modal-lg role="document">
+    	 	  <div class="modal-content">
+    	 		  <div class="modal-header">
+    	 			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+    	 			  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+    	 				  <span aria-hidden="true">&times;</span>
+    	 				</button>
+    	 			</div>
+    	 			<div class="modal-body">
+    	 				<p>Hello!</p>
+    	 			</div>
+    	 			<div class="modal-footer">
+    	 				<button class="btn btn-secondary" data-dismiss="modal">Close</button>
+    	 				<button class="btn btn-primary">Save</button>
+    	 			</div>
+    	 		</div>
+    	 	</div>
+    	</div>
+
+			<div class="row Main-items">
+				<div class="col-lg-3 col-xs-12 Card Card--direction">
+					<div class="Card-imageContainer Card-imageContainer--noBorder">
+						<img class="Card-image" src="images/logo.png" height="326" width="540" alt="img">
+					</div>
+					<div class="Card-body">
+						<p class="Card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<div class="Button">
+							<button class="Button Button-item">Button</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-xs-12 Card Card--direction">
+					<div class="Card-imageContainer Card-imageContainer--noBorder">
+						<img class="Card-image" src="images/logo.png" height="326" width="540" alt="img">
+					</div>
+					<div class="Card-body">
+						<p class="Card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<div class="Button">
+							<button class="Button Button-item">Button</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-xs-12 Card Card--direction">
+					<div class="Card-imageContainer Card-imageContainer--noBorder">
+						<img class="Card-image" src="images/logo.png" height="326" width="540" alt="img">
+					</div>
+					<div class="Card-body">
+						<p class="Card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<div class="Button">
+							<button class="Button Button-item">Button</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row Main-items Main-margin">
+				<div class="col-lg-3 ol-xs-12"></div>
+				<div class="col-lg-3 ol-xs-12 order3"></div>
+				<div class="col-lg-3 ol-xs-12 order2">
+					<button class="Button Button-item"><span onclick="window.scroll(0,0);">PgUp!</span></button>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<div class="Header Header--footer"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

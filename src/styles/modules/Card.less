@@ -1,0 +1,70 @@
+.Card {
+  box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.5);
+  background: #E0FFFF;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+
+  &-imageContainer {
+    display: flex;
+    border-bottom: 1px solid #E0FFFF;
+    min-width: 50%;
+    min-height: 50%;
+    align-items: center;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+    padding-right: 15px;
+
+
+    &--order {
+      padding: 0px;
+      display: flex;
+      order: 2;
+      border-left: 1px solid #ccc;
+      border-right: none;
+      min-width: 50%;
+      padding-left: 15px;
+    }
+
+    &--noBorder {
+      border: none;
+      margin-top: 15px;
+      padding: 0;
+    }
+  }
+
+  &--direction {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  &-image {
+    /*width: 100%;*/
+    /*height: 80%;*/
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+    padding: 15px 10px 15px 15px;
+
+    &--order {
+      display: flex;
+      order: 1;
+    }
+  }
+
+  &-text {
+    display: flex;
+    font-family: Calibri;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+

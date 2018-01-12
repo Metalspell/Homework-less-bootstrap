@@ -1,0 +1,48 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.order2 {
+		display: flex;
+		order: 2;
+	}
+
+	.order3 {
+		display: flex;
+		order: 3;
+	}
+}
+
+#myModal,
+#exampleModal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	#myModal,
+	#exampleModal {
+		position: relative;
+	}
+
+	.modal-content {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.modal-body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
